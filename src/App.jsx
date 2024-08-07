@@ -1,26 +1,15 @@
-//import { useState } from 'react'
+import ExpenseList from './components/ExpenseList';
+//import AddExpense from './components/AddExpense';
+import './App.css';
+//import Header from './components/Header';
 
-import './App.css'
 
 function App() {
- 
-
   return (
-    <>
-      <div>
-       
-      </div>
-
-      <h1>Expense Tracker</h1>
-      <div>
-        <p>
-          
-        </p>
-      </div>
-      <p> 
-      </p>
-    </>
-  )
+    <main>
+     <ExpenseList/>
+    </main>
+  );
 }
 
 export default App

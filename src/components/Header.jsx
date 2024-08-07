@@ -1,25 +1,41 @@
+import { MdPostAdd, MdMessage } from 'react-icons/md';
 
-export default Header;
-import PropTypes from 'prop-types';
+import classes from './Header.module.css';
 
-const Header = ({ setSection }) => {
-  // Rest of the code
 
-Header.propTypes = {
-  setSection: PropTypes.func.isRequired,
-};
-
-  return (
-    <header>
-      <nav>
-        <ul>
-          <li onClick={() => setSection('user')}>User</li>
-          <li onClick={() => setSection('expenses')}>Expenses</li>
-          <li onClick={() => setSection('budget')}>Budget</li>
-        </ul>
-      </nav>
+      function Header({ onCreatePost }) {
+        return 
+          <header className={classes.header}>
+            <h1 className={classes.logo}>
+        <MdMessage />
+        React Poster
+      </h1>
+      <p>
+        <button className={classes.button} onClick={onCreatePost}>
+          <MdPostAdd size={18} />
+          Add Expense
+        </button>
+      </p>
     </header>
   );
-};
+}
+
+export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

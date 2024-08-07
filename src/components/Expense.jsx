@@ -1,34 +1,14 @@
-// src/components/Expense.jsx
-import { useEffect, useState } from 'react';
-import { getExpenses } from '../services/expenseService';
+import classes from './Expense.module.css';
 
-const Expense = () => {
-  const [expenses, setExpenses] = useState([]);
-
-  useEffect(() => {
-    const fetchExpenses = async () => {
-      try {
-        const data = await getExpenses();
-        setExpenses(data);
-      } catch (error) {
-        console.error('Error fetching expenses:', error);
-      }
-    };
-    fetchExpenses();
-  }, []);
-
+function Expense(props) {
   return (
-    <div>
-      <h2>Expenses</h2>
-      <ul>
-        {expenses.map((expense) => (
-          <li key={expense.id}>
-            {expense.name}: ${expense.amount}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+  <li className={classes.expense}> 
+    <p className={classes.shop}>{props.shop}</p>
+    <p className={classes.text}>{props.body}</p>
+  </li>
+);
+}
+
+
 
 export default Expense;
