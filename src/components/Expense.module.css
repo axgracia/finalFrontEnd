@@ -1,18 +1,20 @@
 .expense {
-    margin: 1rem 1rem;
+    margin: .5rem 21.5rem;
     padding: 1rem;
-    background-color: #59b8ec;
+    background-color: #2090d0;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     animation: animate-in 1s ease-out forwards;
+    
   }
   
   .shop {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #543280;
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #0e0d0e;
     margin: 0;
     text-transform: uppercase;
+    text-align: left;
   }
   
   .text {
@@ -21,6 +23,7 @@
     margin: 0.25rem 0 0 0;
     color: #593884;
     font-style: italic;
+    text-align: left;
   }
   
   @keyframes animate-in {
