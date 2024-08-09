@@ -1,10 +1,30 @@
 .expenses {
-    list-style: none;
+    /* margin: .5rem 21.5rem;
+    padding: 1rem;
+    background-color: #2090d0;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    animation: animate-in 1s ease-out forwards; */
+    /*list-style: none;
     max-width: 50rem;
     margin: 1rem auto;
     padding: 1rem 0;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 30%);
-    justify-content: center;
+    justify-content: center;*/
+  }
+
+  .shop {
+    font-size: .08 rem;
+    font-weight: normal;
+    color: #0e0d0e;
+    margin: .5 rem 5 rem;
+    text-transform: ;
+    text-align: left;
+    {/*box-sizing: content-box;
+    width: 20%;
+    height: 30%;
+    border: solid #5B6DCD 2px;
+    padding: 20px;*/}
   }

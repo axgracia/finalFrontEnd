@@ -1,5 +1,6 @@
 
-import classes from './Expense.module.css';
+import PropTypes from 'prop-types';
+import classes from './ExpenseList.module.css';
 
 function Expense(props) {
   return (
@@ -10,6 +11,10 @@ function Expense(props) {
 );
 }
 
-
+//Not sure about this(added because I received error)
+Expense.propTypes = {
+  shop: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+};
 
 export default Expense;

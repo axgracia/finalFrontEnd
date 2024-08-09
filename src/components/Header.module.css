@@ -1,27 +1,27 @@
 .header {
-    /* padding: 2rem 10%; */
+    /*padding: 2 rem 10%;*/
     margin: 2rem 10%;
     padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ece1fa;
+    border-bottom: 2px solid #1f35c5;
   }
   
   .logo {
-    font-size: 2rem;
+    font-size: 2 rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2 rem;
     align-items: center;
-    color: #ece1fa;
+    color: #2b2a2d;
   }
   
   .button {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
+    gap: 2 rem;
+    padding: .75 rem  4 rem;
     background-color: #a990fb;
     color: #2a2630;
     border: none;

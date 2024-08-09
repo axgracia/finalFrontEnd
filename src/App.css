@@ -30,8 +30,8 @@ nav li {
 }
 
 .app {
-  {/*display: flex;*/}
-  {/*flex-direction: column;*/}
+  {/*display: flex;
+  flex-direction: column;*/}
   box-sizing: content-box;
   width: 50%;
   min-height: 100vh;

@@ -8,14 +8,19 @@
     
   }
   
-  .shop {
+  /* .shop {
     font-size: 0.7rem;
     font-weight: normal;
     color: #0e0d0e;
     margin: 0;
     text-transform: uppercase;
     text-align: left;
-  }
+    box-sizing: content-box;
+width: 50%;
+height: 20%;
+//border: solid #5B6DCD 10px;
+padding: 5px;
+  } */
   
   .text {
     white-space: pre-wrap;
