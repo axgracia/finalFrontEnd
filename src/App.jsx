@@ -6,8 +6,15 @@ import './App.css';
 //  import BudgetPage from './pages/BudgetPage';
 //  import UserPage from './pages/UserPage';
 import AddTransaction from "./components/AddTransaction";
+import TransactionItem from "./components/TransactionItem";
 import styled from "styled-components";
+import GlobalStyles from "./components/globalStyles";
 
+const main = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 
 function App() {
@@ -28,7 +35,10 @@ function App() {
           isAdding={modalIsVisible}
           onStopAdding={hideModalHandler} 
           />   
+          <GlobalStyles />
           <AddTransaction />
+          <TransactionItem/>
+          
           
          
       </main>

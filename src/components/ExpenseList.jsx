@@ -4,7 +4,7 @@
     import AddExpense from './AddExpense';
     import classes from './ExpenseList.module.css';
     
-    // import PropTypes from 'prop-types';
+    import PropTypes from 'prop-types';
     
     function ExpenseList({ isAdding, onStopAdding }) {
       return (

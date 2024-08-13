@@ -1,5 +1,3 @@
-// FileName: AddTransaction.js
-
 import { useState } from "react";
 import styled from "styled-components";
 
