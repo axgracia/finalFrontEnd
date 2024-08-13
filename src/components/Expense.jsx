@@ -4,14 +4,15 @@ import classes from './ExpenseList.module.css';
 
 function Expense(props) {
   return (
-  <ul className={classes.expense}> 
-    <p className={classes.shop}>{props.shop}</p>
-    <p className={classes.text}>{props.body}</p>
-  </ul>
-);
+    <div>
+      <ul className={classes.expense}> 
+        <li className={classes.shop}>{props.shop}</li>
+        <li className={classes.text}>{props.body}</li>
+      </ul>
+    </div>
+  );
 }
 
-//Not sure about this(added because I received error)
 Expense.propTypes = {
   shop: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,

@@ -4,39 +4,27 @@
     import AddExpense from './AddExpense';
     import classes from './ExpenseList.module.css';
     
-    function ExpenseList({isAdding, onStopAdding}) {
-        const [enteredBody, setEnteredBody] = useState('');
-        const [enteredShop, setEnteredShop] = useState('');
-
-             function bodyChangeHandler(event) {
-            setEnteredBody(event.target.value);
-        }
-
-        function shopChangeHandler(event) {
-            setEnteredShop(event.target.value);
-        }
-
-        return (
-            <>
+    // import PropTypes from 'prop-types';
+    
+    function ExpenseList({ isAdding, onStopAdding }) {
+      return (
+          <>
             {isAdding && (
             <Modal onClose={onStopAdding}>
-            <AddExpense 
-                onBodyChange={bodyChangeHandler} 
-                onShopChange={shopChangeHandler} 
-                onCancel={onStopAdding}
-            />
+              <AddExpense onCancel={onStopAdding} />
             </Modal>
             )}
-           {/* <button onClick={hideModalHandler}>Add New Expense</button>*/}
-          <div>
-                <h1 style={{ textAlign: 'left',  }}>Expense List</h1>
-                <ul className={classes.expense} className={classes.shop} >
-                    <Expense shop={enteredShop} body={enteredBody} />
-                    <Expense shop="New expense" body="Car tires  $200" />
-                </ul>
-            </div>
-            </>
+           {/* <button onClick={hideModalHandler}>Add New Expense</button> */}
+        
+              <h1 style={{ textAlign: 'left', }}></h1>
+              <ul className={classes.expense}>
+                  <Expense shop="" body="" />
+              </ul>
+          </>
         );
-    }
+       }
+            
+            
+
     
     export default ExpenseList;
