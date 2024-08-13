@@ -1,7 +1,7 @@
 import  { useEffect, useState } from "react";
 import styled from "styled-components";
-import TransactionItem from "./TransactionItem";
-
+import TransactionItem from "./TransactionItem.jsx";
+import Header from "./Header.jsx";
 const Container = styled.div``;
 
 
@@ -42,7 +42,7 @@ const TransactionsContainer = ({ transactions, removeTransaction }) => {
 
   return (
     <Container>
-      <Heading>Transactions</Heading>
+      <Header>Transactions</Header>
 
       <SearchInput
         type="text"

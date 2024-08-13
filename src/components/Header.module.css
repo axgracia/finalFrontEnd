@@ -1,4 +1,4 @@
-.header {
+ .header {
     font-family: Arial, sans-serif;
     background-color: #3cabeb;
     padding: 2em 6em;
@@ -47,10 +47,10 @@
     background-color: #8c6cf7;
   }
 
-  /* .nav {
+   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
     border-bottom: 2px solid #1f35c5;
-  } */
+  }  

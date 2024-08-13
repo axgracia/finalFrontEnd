@@ -22,6 +22,8 @@ const RemoveButton = styled.button`
   cursor: pointer;
 `;
 
+import PropTypes from "prop-types";
+
 const TransactionItem = ({ transaction, removeTransaction }) => {
   return (
     <Item isExpense={transaction?.transType === "expense"}>
@@ -34,4 +36,15 @@ const TransactionItem = ({ transaction, removeTransaction }) => {
   );
 };
 
+TransactionItem.propTypes = {
+  transaction: PropTypes.shape({
+    details: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    transType: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+  }).isRequired,
+  removeTransaction: PropTypes.func.isRequired,
+};
+
 export default TransactionItem;
+

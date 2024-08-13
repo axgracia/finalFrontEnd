@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"; // Import PropTypes for prop type validation
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -106,6 +107,12 @@ const AddTransaction = ({ setToggle, AddTransactions }) => {
       <SubmitBtn onClick={AddTransactionData}>Add Transaction</SubmitBtn>
     </Container>
   );
+};
+
+// Define PropTypes outside the component function
+AddTransaction.propTypes = {
+  setToggle: PropTypes.func.isRequired,
+  AddTransactions: PropTypes.func.isRequired,
 };
 
 export default AddTransaction;

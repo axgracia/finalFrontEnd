@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import classes from './Header.module.css';
 
 
-      import PropTypes from 'prop-types';
+     // import PropTypes from 'prop-types';
       
-      function Header({onAddExpense}) {
-        // Rest of the code
       
-      Header.propTypes = {
-        onAddExpense: PropTypes.func.isRequired,
-      };
-      
-     
+      // ({onAddExpense}) {
+      //   // Rest of the code
+      // Header.propTypes = {
+      //   onAddExpense: PropTypes.func.isRequired,
+      // };
+      function Header()  {
         return (
           <header className={classes.header}>
             <h1 className={classes.logo}>
@@ -29,17 +28,18 @@ import classes from './Header.module.css';
               </ul>
             </nav> 
             </h3>
-            <p>
+            {/*<p>
               <button className={classes.button} onClick={onAddExpense}>
-                {/*<MdMonetizationOn size={18} />*/}
+                {/*<MdMonetizationOn size={18} />
                 Add Expense
               </button>
-            </p>
+            </p>*/}
 
             
           </header>
         );
       }
+      
 
 export default Header;  
                 
