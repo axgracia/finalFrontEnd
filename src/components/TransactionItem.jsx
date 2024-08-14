@@ -5,7 +5,7 @@ const Item = styled.div`
   justify-content: space-between;
   align-items: center;
   border: 1px solid #e6e8e9;
-  background-color: #2090d0;
+  background-color: #3cabeb;
   border-radius: 5px;
   padding: 10px 20px;
   border-right: 5px solid ${(props) => (props.isExpense ? "red" : "green")};
@@ -14,7 +14,7 @@ const Item = styled.div`
 `;
 
 const RemoveButton = styled.button`
-  background-color: #44E610;
+  background-color: #a990fb;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -28,7 +28,7 @@ const TransactionItem = ({ transaction, removeTransaction }) => {
   return (
     <Item isExpense={transaction?.transType === "expense"}>
       <span>{transaction.details}</span>
-      <span>₹{transaction.amount}</span>
+      <span>${transaction.amount}</span>
       <RemoveButton onClick={() => removeTransaction(transaction.id)}>
         Remove
       </RemoveButton>
