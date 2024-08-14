@@ -12,7 +12,7 @@ import Header from "./components/Header.jsx";
  import Tracker from "./components/Tracker.jsx";
 
 
-     styled.div`
+     const Main = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;

@@ -7,12 +7,12 @@ import TransactionsContainer from './TransactionContainer.jsx';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 900px;
   max-width: 100%;
   background-color: #fff;
   padding: 30px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
+  border: 2px solid #000;
+  border-radius: 7px;
   margin: 10px;
 `;
 

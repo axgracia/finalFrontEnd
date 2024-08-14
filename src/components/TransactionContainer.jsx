@@ -2,8 +2,9 @@ import  { useEffect, useState } from "react";
 import styled from "styled-components";
 import TransactionItem from "./TransactionItem.jsx";
 import Header from "./Header.jsx";
-const Container = styled.div``;
 
+
+const Container = styled.div``;
 
 const SearchInput = styled.input`
   width: 100%;
