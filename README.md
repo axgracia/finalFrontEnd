@@ -61,7 +61,7 @@ expense-tracker-frontend/
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/expense-tracker-frontend.git
+    git clone https://github.com/axgracia/finalFrontEnd.git
     cd expense-tracker-frontend
     ```
 
